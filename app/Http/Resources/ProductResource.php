@@ -18,7 +18,7 @@ class ProductResource extends JsonResource
             'product_category_id' => $this->product_category_id,
             'image' => $this->image ? asset(Storage::url($this->image)) : null,
             'name' => $this->name,
-            'price' => (float)(string) $this->price,
+            'price' => (float) (string) $this->price,
             'stock' => $this->stock,
         ];
     }
